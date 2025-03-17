@@ -52,5 +52,5 @@ Modify the `POST /order` endpoint to allow customers to apply a percentage disco
 | ----------------- | ---------------------------------------------------- |
 | `total`           | Total value of items without discount                |
 | `discount`        | Percentage discount applied (if provided)            |
-| `discount_amount` | Absolute discount value                              |
+| `discount_amount` | Absolute discount value (total * (discount / 100))   |
 | `final_total`     | Final total after discount (total - discount_amount) |
